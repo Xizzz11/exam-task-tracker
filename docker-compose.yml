@@ -1,0 +1,28 @@
+<<<<<<< HEAD
+version: "3.9"
+=======
+>>>>>>> f288b6a259cfa99c6d34b38d1f98492c44117b3c
+
+services:
+  backend:
+    build: .
+    ports:
+      - "8000:8000"
+<<<<<<< HEAD
+=======
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+>>>>>>> f288b6a259cfa99c6d34b38d1f98492c44117b3c
+    depends_on:
+      - redis
+
+  redis:
+<<<<<<< HEAD
+    image: redis:7
+=======
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+>>>>>>> f288b6a259cfa99c6d34b38d1f98492c44117b3c
